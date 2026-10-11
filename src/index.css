@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Rethink Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Literata", Georgia, "Times New Roman", serif;
+
+  /* ——— shadcn tokens ——— */
+  --color-background: #ffffff;
+  --color-foreground: #141a26;
+  --color-card: #ffffff;
+  --color-card-foreground: #141a26;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #141a26;
+  --color-primary: #101d33;
+  --color-primary-foreground: #f7f3e8;
+  --color-secondary: #efe9d8;
+  --color-secondary-foreground: #101d33;
+  --color-muted: #f4f2ea;
+  --color-muted-foreground: #5c6575;
+  --color-accent: #c9a24b;
+  --color-accent-foreground: #17233a;
+  --color-destructive: #b3261e;
+  --color-border: #e4ddc9;
+  --color-input: #d3cbae;
+  --color-ring: #c9a24b;
+
+  /* ——— marca ——— */
+  --color-tinta-950: #0a1424;
+  --color-tinta-900: #101d33;
+  --color-tinta-800: #1a2c4b;
+  --color-tinta-700: #274067;
+  --color-ouro-300: #e3c87e;
+  --color-ouro-400: #d8b45f;
+  --color-ouro-500: #c9a24b;
+  --color-ouro-600: #a98430;
+  --color-papel: #f7f5ef;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-overlay-show: overlay-show 0.18s ease-out;
+  --animate-content-show: content-show 0.22s ease-out;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+@keyframes overlay-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes content-show {
+  from {
+    opacity: 0;
+    transform: translateX(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: var(--color-ouro-500);
+    color: #17233a;
+  }
+}
+
+@layer utilities {
+  /* Grafismo sutil dos cartões coloridos — homenagem aos cards gráficos da PUC-Rio */
+  .grafismo {
+    position: relative;
+    overflow: hidden;
+  }
+  .grafismo::after {
+    content: "";
+    position: absolute;
+    right: -56px;
+    bottom: -56px;
+    width: 190px;
+    height: 190px;
+    border-radius: 9999px;
+    border: 22px solid rgb(255 255 255 / 0.16);
+    pointer-events: none;
+  }
+  .grafismo::before {
+    content: "";
+    position: absolute;
+    right: 44px;
+    top: -64px;
+    width: 130px;
+    height: 130px;
+    border-radius: 9999px;
+    border: 14px solid rgb(0 0 0 / 0.08);
+    pointer-events: none;
+  }
+}
