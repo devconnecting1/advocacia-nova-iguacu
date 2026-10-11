@@ -55,7 +55,7 @@ export function FaixaUtilidades({
 
 export function Cabecalho() {
   return (
-    <header className="sticky top-0 z-40 border-b bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
       <div className="mx-auto max-w-6xl px-4 pt-4 pb-3">
         <div className="flex items-center gap-3">
           <a href="#inicio" className="mx-auto flex flex-col items-center gap-1 text-center">

@@ -44,7 +44,7 @@ export function FaixaNumeros() {
     ["Acompanhamento", "online do caso"],
   ];
   return (
-    <section className="border-y bg-white">
+    <section className="border-y bg-background">
       <div className="mx-auto grid max-w-6xl gap-4 px-4 py-8 sm:grid-cols-3">
         {itens.map(([forte, resto]) => (
           <p key={forte} className="flex items-center gap-2 text-[15px]">
@@ -62,7 +62,7 @@ export function FaixaNumeros() {
 
 export function SobreSecao() {
   return (
-    <section id="sobre" className="bg-white">
+    <section id="sobre" className="bg-background">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 lg:grid-cols-[1.4fr_0.8fr]">
         <div>
           <p className="text-xs font-bold tracking-[0.16em] text-ouro-600 uppercase">
@@ -150,7 +150,7 @@ export function DepoimentosSecao() {
 
 export function FaqSecao() {
   return (
-    <section id="faq" className="bg-white">
+    <section id="faq" className="bg-background">
       <div className="mx-auto max-w-3xl px-4 py-12">
         <p className="text-xs font-bold tracking-[0.16em] text-ouro-600 uppercase">
           Dúvidas frequentes

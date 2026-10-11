@@ -47,7 +47,7 @@ export function HeroPortal() {
               variant="outline"
               size="lg"
               asChild
-              className="border-white/30 bg-transparent text-white hover:bg-white hover:text-tinta-900"
+              className="border-white/30 bg-transparent text-white hover:bg-background hover:text-tinta-900"
             >
               <a href={slide.secundariaHref}>{slide.secundaria}</a>
             </Button>

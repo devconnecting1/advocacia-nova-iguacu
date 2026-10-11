@@ -6,36 +6,18 @@
   --font-sans: "Rethink Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-serif: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
 
-  /* ——— shadcn tokens ——— */
-  --color-background: #ffffff;
-  --color-foreground: #141a26;
-  --color-card: #ffffff;
-  --color-card-foreground: #141a26;
-  --color-popover: #ffffff;
-  --color-popover-foreground: #141a26;
-  --color-primary: #101d33;
-  --color-primary-foreground: #f7f3e8;
-  --color-secondary: #efe9d8;
-  --color-secondary-foreground: #101d33;
-  --color-muted: #f4f2ea;
-  --color-muted-foreground: #5c6575;
-  --color-accent: #c9a24b;
-  --color-accent-foreground: #17233a;
-  --color-destructive: #b3261e;
-  --color-border: #e4ddc9;
-  --color-input: #d3cbae;
-  --color-ring: #c9a24b;
+  /* ——— shadcn tokens: definidos pelo tema (@theme inline + :root abaixo) ——— */
 
-  /* ——— marca ——— */
-  --color-tinta-950: #0a1424;
-  --color-tinta-900: #101d33;
-  --color-tinta-800: #1a2c4b;
-  --color-tinta-700: #274067;
-  --color-ouro-300: #e3c87e;
-  --color-ouro-400: #d8b45f;
-  --color-ouro-500: #c9a24b;
-  --color-ouro-600: #a98430;
-  --color-papel: #f7f5ef;
+  /* ——— marca (neutra) ——— */
+  --color-tinta-950: #0d0d0d;
+  --color-tinta-900: #1a1a1a;
+  --color-tinta-800: #262626;
+  --color-tinta-700: #404040;
+  --color-ouro-300: #e2e2e2;
+  --color-ouro-400: #c8c8c8;
+  --color-ouro-500: #a3a3a3;
+  --color-ouro-600: #525252;
+  --color-papel: #f2f2f2;
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -198,7 +180,7 @@
 }
 
 :root {
-  --background: oklch(0.9702 0 0);
+  --background: oklch(0.95 0 0);
   --foreground: oklch(0.2178 0 0);
   --card: oklch(1.0000 0 0);
   --card-foreground: oklch(0.2178 0 0);
