@@ -4,7 +4,7 @@
 
 @theme {
   --font-sans: "Rethink Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-serif: "Literata", Georgia, "Times New Roman", serif;
+  --font-serif: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
 
   /* ——— shadcn tokens ——— */
   --color-background: #ffffff;
@@ -130,9 +130,9 @@
 }
 
 @theme inline {
-  --font-sans: "Rethink Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
-  --font-serif: "Literata", Georgia, "Times New Roman", serif;
+  --font-sans: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
   --radius: 0.25rem;
   --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
   --tracking-tight: calc(var(--tracking-normal) - 0.025em);
@@ -231,9 +231,9 @@
   --sidebar-accent-foreground: oklch(0.2178 0 0);
   --sidebar-border: oklch(0.8452 0 0);
   --sidebar-ring: oklch(0.2178 0 0);
-  --font-sans: "Rethink Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Literata", Georgia, "Times New Roman", serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --shadow-color: #000000;
   --shadow-opacity: 0;
   --shadow-blur: 0px;
@@ -287,9 +287,9 @@
   --sidebar-accent-foreground: oklch(0.9702 0 0);
   --sidebar-border: oklch(0.3715 0 0);
   --sidebar-ring: oklch(0.9702 0 0);
-  --font-sans: "Rethink Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Literata", Georgia, "Times New Roman", serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Geist Sans", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   --shadow-color: #000000;
   --shadow-opacity: 0;
   --shadow-blur: 0px;

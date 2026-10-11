@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/geist-mono": "^5.3.0",
+    "@fontsource/geist-sans": "^5.3.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-label": "^2.1.7",
@@ -33,6 +35,13 @@
     "typescript": "~6.0.2",
     "vite": "^8.3.0"
   },
-  "keywords": ["advocacia", "nova-iguacu", "direito-civil", "direito-trabalhista", "github-pages", "shadcn"],
+  "keywords": [
+    "advocacia",
+    "nova-iguacu",
+    "direito-civil",
+    "direito-trabalhista",
+    "github-pages",
+    "shadcn"
+  ],
   "license": "MIT"
 }
