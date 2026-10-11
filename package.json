@@ -1,0 +1,13 @@
+{
+  "name": "advocacia-nova-iguacu",
+  "version": "1.0.0",
+  "description": "Site institucional — Advocacia Nova Iguaçu/RJ (Direito Civil e Trabalhista)",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "preview": "npm run build && npx --yes serve dist -l 4173",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "keywords": ["advocacia", "nova-iguacu", "direito-civil", "direito-trabalhista", "github-pages"],
+  "license": "MIT"
+}
